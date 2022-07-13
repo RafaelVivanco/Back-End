@@ -2,14 +2,14 @@ curso = "Back-end"
 
 print(curso)
 
-cagada = "cagada"
+adjetivo = "chevere"
 
-funny = 69
+estado = "horrible"
 
-print(curso,"es una",cagada, funny)
+print(curso,"es",adjetivo,"no es", estado)
 
-#print(curso+"es una"+cagada+ funny) #sale error porque no se pueden sumar int + number
+#print(curso+"es una"+cagada+ estado) #sale error porque no se pueden sumar int + number
 
-print("El curos es {} y el día es {}".format(curso, funny))
+print("El curos es {} y el día es {}".format(curso, estado))
 
-print("El curos es {1} y el día es {0}".format(curso, funny))
+print("El curos es {1} y el día es {0}".format(adjetivo, estado))
