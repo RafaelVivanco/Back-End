@@ -6,11 +6,21 @@ class Participante(conexion.Model):
     # (todos los atributos que declare que sean propios de la bd serán columnas
     # parámetro = column(tipo = tipo.String(varchar))
     id = Column(type_ = types.Integer, autoincrement = True, primary_key = True)
+
     nombre = Column(type_ = types.String(50), nullable = False)
+    #_nombre (Atributo privado)
+    #__nombre (Atributo protegido)
     apellido = Column(type_ = types.String(50), nullable = False)
+
     telefono = Column(type_ = types.String(10), nullable = False)
+
     password = Column(type_ = types.Text, nullable = False)
+
     zona = Column(type_ = types.Enum("SUPER VIP", "VIP", "GENERAL"),
     default = "GENERAL", nullable = False)
+
     comentario = Column(type_ = types.Text)
+
     telefono = Column(type_ = types.String(45), nullable = False)
+
+    

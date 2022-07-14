@@ -1,0 +1,18 @@
+django-admin startproyect "nombre" > crea un proyecto de django utilizando ese nombre: "nombre"
+
+python manage.py runserver > levantar proyecto de Django
+
+python manage.py showmigrations > muestra todas las migraciones creadas en el proyecto y con una [x] las migraciones ya efecutaadas
+
+python manage.py migrate > ejecuta todas las migraciones pendientes aa la bd
+
+python manage.py sqlmigrate *auth **0001 *NOMBREAPP **NUM_MIGATION > retornará la sentencia SQL de la migración que se efectuará
+en la base de datos
+
+python manage.py createsuperuser > crear cuenta para el localhost:8000/admin
+
+to break server = crtl + c
+
+Usuario Activo = sin acceso al panel administrativo
+Usuario Staff = con acceso al panel administrativo
+Super Usuario = acceso a todas las vistas y propiedades del panel administrativo
